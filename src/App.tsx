@@ -14,6 +14,7 @@ function App() {
     // Make http requests to the two endpoints
     axios.all([axios("/foo"), axios("/bar/3")]).then(([res1, res2]) => {
       console.log(res1, res2);
+      // Update state
       setResponse({ foo: res1.data.foo, input: res2.data.input });
     });
   }, []);
