@@ -21,7 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
 
 # Flask
 /api/venv
 /api/__pycache__
+
